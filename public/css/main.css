@@ -1,0 +1,20 @@
+body {
+  background: rgb(148, 148, 22);
+}
+
+h2 {
+  text-shadow:  1px   1px   13px rgba(82, 168, 236, 0.6), 
+                1px   1px   13px rgba(82, 168, 236, 0.6);
+}
+
+.mine-header {
+  background: url('../img/header.png') -30px -149px no-repeat;
+}
+
+.box-shadow {
+  box-shadow: 0 5px 30px rgba(0,0,0,1);
+}
+
+.server-info {
+  font-size: 1.2em;
+}
