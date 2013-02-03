@@ -1,0 +1,33 @@
+- name: U nás na dvorku
+  description: Můžeš si tu třeba ogrilovat kuře, nebo postavit sekyru a vyrazit za dřevem
+  file: mineshot-01.png
+
+- name: Záludný žebřík ve stráni
+  description: Tenhle vede k ještě záludnějšímu schodišti
+  file: mineshot-02.png
+
+- name: Záludné schodiště
+  description: Cesta do hlubin Cheienské hory
+  file: mineshot-03.png
+
+- name: Šachta - Vchod
+  description: Slouží pro rychlý přístup ke dnu světa
+  file: mineshot-04.png
+
+- name: Šachta
+  description: Dolu volnopád nahoru žebřík
+  file: mineshot-05.png
+
+- name: Spodní okraj Brány
+  description: Když jsem se dokopal na dno světa, tak jsem si řekl že tady bude stát. Shapa jedna :) Tak jsem začal kopat
+  file: mineshot-06.png
+
+- name: Pravý okraj Brány
+  description: ...a kopal...
+  file: mineshot-07.png
+
+- name: Unknown territory
+  description: Tady je jeskyně, kterou zatím nemám moc prozkoumanou. Semi ji asi bude mít celkem projdutou. Začal na serveru hrát o hodinu dřív ;)
+  file: mineshot-08.png
+
+
