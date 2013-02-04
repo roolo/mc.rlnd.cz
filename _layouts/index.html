@@ -27,31 +27,31 @@
 
 <body>
   <div class="container">
-    <div class="hero-unit mine-header box-shadow">
-      <h1>Minecraft na mc.rlnd.cz</h1>
-    </div>
-    <div class="row">
-      <div class="span5">
-        <h2 class="blue-shadow">Informace</h2>
-
-        <p>
-          <span class="label label-info server-info">Server má i alias mc.rlnd.cz</span>
-        </p>
-        <p>
-          <img class="box-shadow" src="http://query.fakaheda.eu/93.91.250.130:27296" alt="Stav serveru">
-        </p>
+    <div id="screenshots-carousel" class="carousel slide box-shadow">
+      <div class="carousel-inner">
+        {% screen_shots %}
       </div>
-      <div class="span7">
-        <h2>Screeny</h2>
-        <div id="screenshots-carousel" class="carousel slide box-shadow">
-          <div class="carousel-inner">
-            {% screen_shots %}
-          </div>
-          <a class="left carousel-control" href="#screenshots-carousel" data-slide="prev">‹</a>
-          <a class="right carousel-control" href="#screenshots-carousel" data-slide="next">›</a>
+      <a class="left carousel-control" href="#screenshots-carousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="#screenshots-carousel" data-slide="next">›</a>
+    </div>
+    <div id="content-wrapper">
+      <div class="hero-unit mine-header box-shadow span8">
+        <h1>Minecraft na mc.rlnd.cz</h1>
+      </div>
+      <div style="clear:both"></div>
+      <div id="main-content" class="row">
+        <div class="span8">
+          <h2 class="blue-shadow">Informace</h2>
+
+          <p>
+            <span class="label label-info server-info">Server má i alias mc.rlnd.cz</span>
+          </p>
+          <p>
+            <img class="box-shadow" src="http://query.fakaheda.eu/93.91.250.130:27296" alt="Stav serveru">
+          </p>
         </div>
       </div>
-    </div>
+    </div> <!-- #content-wrapper-->
   </div><!-- /container -->
   <script src="js/jquery-1.9.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -3,12 +3,13 @@ body {
 }
 
 h2 {
-  text-shadow:  1px   1px   13px rgba(82, 168, 236, 0.6), 
+  text-shadow:  1px   1px   13px rgba(82, 168, 236, 0.6),
                 1px   1px   13px rgba(82, 168, 236, 0.6);
+  color:        rgb(202, 182, 33);
 }
 
 .mine-header {
-  background: url('../img/header.png') -30px -149px no-repeat;
+  background: url('../img/header.png') no-repeat
 }
 
 .box-shadow {
@@ -17,4 +18,18 @@ h2 {
 
 .server-info {
   font-size: 1.2em;
+}
+
+#main-content {
+  background: rgba(63, 54, 54, 0.52);
+  padding:    20px;
+}
+
+#content-wrapper {
+  top: 20px;
+  position:       fixed;
+  padding-left:   60px;
+  padding-right:  60px;
+  margin-left:    65px;
+  margin-right:   125px;
 }
