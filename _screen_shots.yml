@@ -1,11 +1,11 @@
-- name: Transpacifický expres
-  description: Tudy bude jezdit vláček ze spawnu až do Cheyenne Mountain
-  file: mineshot-01.png
-
 - name: Unknown territory
   description: Tady je jeskyně, kterou zatím nemám moc prozkoumanou. Semi ji asi bude mít celkem projdutou. Začal na serveru hrát o hodinu dřív ;)
   file: mineshot-02.png
-
+  
+- name: Transpacifický expres
+  description: Tudy bude jezdit vláček ze spawnu až do Cheyenne Mountain
+  file: mineshot-01.png
+  
 - name: U nás na dvorku
   description: Můžeš si tu třeba ogrilovat kuře, nebo postavit sekyru a vyrazit za dřevem
   file: mineshot-03.png
