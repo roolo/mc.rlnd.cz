@@ -12,7 +12,7 @@ module Jekyll
       code_fragments = []
       YAML.load(File.read('_screen_shots.yml')).each_with_index do |item_data, index|
         code_fragments << <<-HTML
-          <div class="item">
+          <div class="item#{index==0?' active':''}">
             <img src="images/screeny/#{item_data['file']}" alt="">
             <div class="carousel-caption">
               <h4>#{item_data['name']}</h4>
