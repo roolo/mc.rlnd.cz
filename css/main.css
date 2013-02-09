@@ -2,7 +2,7 @@ body {
   background: rgb(148, 148, 22);
 }
 
-h2 {
+.blue-shadow, li.active .blue-shadow-active {
   text-shadow:  1px   1px   13px rgba(82, 168, 236, 0.6),
                 1px   1px   13px rgba(82, 168, 236, 0.6);
   color:        rgb(202, 182, 33);
@@ -23,6 +23,7 @@ h2 {
 #main-content {
   background: rgba(63, 54, 54, 0.52);
   padding:    20px;
+  max-height: 220px;
 }
 
 #content-wrapper {
@@ -32,4 +33,22 @@ h2 {
   padding-right:  60px;
   margin-left:    65px;
   margin-right:   125px;
+}
+
+.tab-pane.active, ul.nav-tabs li.active a {
+  background: black;
+}
+
+#rss-box {color: rgba(231, 231, 231, 0.84);}
+#rss-box .post {
+  border-bottom: white;
+}
+
+.post-clear {
+  clear:    both;
+  border-bottom: 1px white solid;
+}
+
+.post-image, .post-text {
+  float: left;
 }

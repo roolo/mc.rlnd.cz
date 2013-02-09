@@ -1,0 +1,13 @@
+<div id="rss-box" ng-controller="RssController">
+  <div class="post" ng-repeat="post in rssPosts">
+    <div class="post-image span2">
+      <div ng-show="post.imageUrl">
+        <a href="{% angular_value post.imageUrl %}" target="_blank">
+          <img ng-src="{% angular_value post.imageUrl %}">
+        </a>
+      </div>
+    </div>
+    <div class="post-text  span5" ng-bind-html-unsafe="post.title"></div>
+    <div class="post-clear"></div>
+  </div>
+</div>
