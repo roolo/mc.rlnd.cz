@@ -31,29 +31,20 @@ function RssController($scope, $http) {
     var imgRegExp = /(http:\/[\w\d\.\/]+\.png$)/;
     $scope.rssPosts = data.map(function(item){
       return {
-        title: $scope.parseTitle(imgRegExp, item.title),
-        imageUrl: $scope.getImages(imgRegExp, item.title)
+        title: $scope.removeImages(imgRegExp, item.title),
+        imageUrl: $scope.getImage(imgRegExp, item.title)
       }
     });
-  };
-  $scope.parseTitle = function(imgRegExp, title){
-    var output = $scope.removeImages(imgRegExp, title);
-    output = $scope.clickableADNHandles(output);
-
-    return output;
   };
   $scope.removeImages = function (imgRegExp, text) {
     return text.replace(imgRegExp, '');
   };
-  $scope.getImages = function (imgRegExp, text) {
+  $scope.getImage = function (imgRegExp, text) {
     var imgUrl = text.match(imgRegExp);
     if( imgUrl) {
       return imgUrl[0];
     }
   };
-  $scope.clickableADNHandles = function(text){
-    return text.replace(/(@(\w+))/,'<a href="https://alpha.app.net/$2">$1</a>');
-  }
 
 }
 
