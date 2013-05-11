@@ -32,7 +32,7 @@ function RssController($scope, $http) {
     $scope.rssPosts = data.map(function(item){
       return {
         title: $scope.removeImages(imgRegExp, item.title),
-        imageUrl: $scope.getImage(imgRegExp, item.title)
+        imageUrl: $scope.getImage(imgRegExp, item.content)
       }
     });
   };
@@ -41,8 +41,10 @@ function RssController($scope, $http) {
   };
   $scope.getImage = function (imgRegExp, text) {
     var imgUrl = text.match(imgRegExp);
-    if( imgUrl) {
+    if(imgUrl) {
       return imgUrl[0];
+    } else {
+      return jQuery(text).find('img').attr('src')
     }
   };
 
