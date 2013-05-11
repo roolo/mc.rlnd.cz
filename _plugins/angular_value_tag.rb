@@ -1,5 +1,5 @@
 module Jekyll
-  class AngularValueTag
+  class AngularValueTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
       @tag_name = tag_name,

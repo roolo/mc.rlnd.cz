@@ -1,6 +1,6 @@
 module Jekyll
   require 'yaml'
-  class RenderScreenShotsTag
+  class RenderScreenShotsTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
       super
       @tag_name = tag_name,
