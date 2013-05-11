@@ -24,6 +24,7 @@ body {
   background: rgba(63, 54, 54, 0.52);
   padding:    20px;
   max-height: 220px;
+  overflow:   scroll;
 }
 
 #content-wrapper {
